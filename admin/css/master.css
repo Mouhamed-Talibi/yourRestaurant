@@ -1,0 +1,146 @@
+/* start root */
+    :root {
+        --main-color: #d36d0e;
+    }
+/* end root */
+
+/* start global rules */
+    body {
+        font-family: "Jost", serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+/* end global rules */
+
+/* start nav */
+    .nav-item .nav-link:hover {
+        border-bottom: 1px solid var(--main-color);
+        font-weight: 500;
+        line-height: 1.7;
+    }
+
+    .navbar-toggler {
+        background-color: wheat;
+    }
+
+    .dropdown-menu .dropdown-item:hover {
+        background-color: var(--main-color);
+        color: white;
+        font-weight: 400;
+    }
+
+    .logout  {
+        background-color: rgb(134, 40, 40);
+        padding: 5px;
+    }
+
+    .logout:hover {
+        background-color: rgb(201, 30, 18);
+        font-weight: 500;
+    }
+/* end nav */
+
+/* start dashboard */
+    .dashboard .container .stats {
+        margin-top: 100px;
+    }
+    .stats-head h3{
+        border-bottom: 1px solid var(--main-color);
+    }
+
+    .stats-head h3 span{
+        color: var(--main-color);
+    }
+
+    .dashboard .container .stats .stat-card h3 {
+        color: #c08956;
+    }
+
+    .dashboard .container .stats .stat-card:hover{
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .dashboard .container .stats .stat-card:hover h3 {
+        color: var(--main-color);
+    }
+
+    .dashboard .container .dashboard-table h3{
+        border-bottom: 1px solid var(--main-color);
+        margin-top: 50px;
+    }
+
+    @media (max-width: 767px) {
+        .dashboard .container .dashboard-table .table{
+            display: none;
+        }
+    }
+/* end dashboard */
+
+/* start messages */
+    .messages .card {
+        border-radius: 10px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .messages .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .messages h2 {
+        font-size: 1.75rem;
+        color: #f8f9fa;
+    }
+
+    .messages p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+/* end messages */
+
+/* start profile */
+    .profile .user-infos .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .profile .user-infos .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Styling the Links for Editing */
+    .profile .d-flex a {
+        font-size: 1.1rem;
+        padding: 10px 20px;
+    }
+
+    .profile .d-flex a:hover {
+        opacity: 0.8;
+    }
+
+    .profile .btn-outline-primary {
+        color: #007bff;
+        border-color: #007bff;
+    }
+
+    .profile .btn-outline-primary:hover {
+        background-color: #007bff;
+        color: #fff;
+    }
+
+    .profile .btn-outline-secondary {
+        color: #6c757d;
+        border-color: #6c757d;
+    }
+
+    .profile .btn-outline-secondary:hover {
+        background-color: #6c757d;
+        color: #fff;
+    }
+/* end profile */
